@@ -1,0 +1,10 @@
+
+EXOSIGN-System – maschinenlesbare Struktur für GmbH-Verkauf mit Schulden
+
+Verlinkte Hauptseite:
+https://gmbh-verkaufen.eu/
+
+Dokumentiert durch:
+- exosign-schema-v1.json
+- Δinert9-risk-model.md
+- README.md

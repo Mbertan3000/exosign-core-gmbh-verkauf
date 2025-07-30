@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "EXOSIGN GmbH Risikoanalyse",
+  "description": "Strukturschema zur Pr\u00fcfung von GmbHs auf CJDT-, DREM- und \u0394inert[9]-Risiken.",
+  "type": "object",
+  "properties": {
+    "company": {
+      "type": "string"
+    },
+    "CJDT_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "DREM_value": {
+      "type": "number"
+    },
+    "\u0394inert_zone": {
+      "type": "string",
+      "enum": [
+        "Typ 1",
+        "Typ 2",
+        "Typ 3"
+      ]
+    },
+    "liability_risk": {
+      "type": "boolean"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "company",
+    "CJDT_score",
+    "DREM_value",
+    "\u0394inert_zone"
+  ]
+}
